@@ -16,6 +16,8 @@
  
 package com.keygenqt.modifier
 
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 
@@ -28,3 +30,43 @@ import androidx.compose.ui.draw.alpha
  * @author Vitaliy Zarubin
  */
 fun Modifier.visible(visibility: Boolean): Modifier = this.then(alpha(if (visibility) 1f else 0f))
+
+/**
+ * Modifier padding configuration size
+ *
+ * @since 0.0.3
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.paddingXSmall(): Modifier = this.then(padding(ModifierConfiguration.XSmall))
+
+fun Modifier.paddingSmall(): Modifier = this.then(padding(ModifierConfiguration.small))
+
+fun Modifier.paddingMedium(): Modifier = this.then(padding(ModifierConfiguration.medium))
+
+fun Modifier.paddingLarge(): Modifier = this.then(padding(ModifierConfiguration.large))
+
+fun Modifier.paddingXLarge(): Modifier = this.then(padding(ModifierConfiguration.XLarge))
+
+fun Modifier.padding2XLarge(): Modifier = this.then(padding(ModifierConfiguration.`2XLarge`))
+
+fun Modifier.padding3XLarge(): Modifier = this.then(padding(ModifierConfiguration.`3XLarge`))
+
+/**
+ * Modifier size configuration size
+ *
+ * @since 0.0.3
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.sizeXSmall(): Modifier = this.then(size(ModifierConfiguration.XSmall))
+
+fun Modifier.sizeSmall(): Modifier = this.then(size(ModifierConfiguration.small))
+
+fun Modifier.sizeMedium(): Modifier = this.then(size(ModifierConfiguration.medium))
+
+fun Modifier.sizeLarge(): Modifier = this.then(size(ModifierConfiguration.large))
+
+fun Modifier.sizeXLarge(): Modifier = this.then(size(ModifierConfiguration.XLarge))
+
+fun Modifier.size2XLarge(): Modifier = this.then(size(ModifierConfiguration.`2XLarge`))
+
+fun Modifier.size3XLarge(): Modifier = this.then(size(ModifierConfiguration.`3XLarge`))

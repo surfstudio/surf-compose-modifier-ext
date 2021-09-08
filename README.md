@@ -17,6 +17,26 @@ dependencies {
 ### Extensions
 
 * visible - Controlling element visibility based on transparency
+* padding{XSmall} - Padding common sizes (XSmall, small, medium, large, XLarge, 2XLarge, 3XLarge)
+* size{XSmall} - Padding common sizes (XSmall, small, medium, large, XLarge, 2XLarge, 3XLarge)
+
+### Usage
+
+```kotlin
+// Default configuration
+ModifierConfiguration.init(
+    XSmall = 2.dp,
+    small = 4.dp,
+    medium = 8.dp,
+    large = 16.dp,
+    XLarge = 24.dp,
+    `2XLarge` = 48.dp,
+    `3XLarge` = 96.dp,
+)
+
+// Example usage
+Spacer(modifier = Modifier.sizeLarge())
+```
 
 # License
 

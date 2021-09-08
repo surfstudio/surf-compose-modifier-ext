@@ -6,7 +6,7 @@ plugins {
     id("com.diffplug.spotless")
 }
 
-version = "0.0.2"
+version = "0.0.3"
 group = "com.keygenqt.modifier"
 
 spotless {
@@ -54,4 +54,5 @@ android {
 
 dependencies {
     implementation("androidx.compose.ui:ui:1.0.2")
+    implementation("androidx.compose.material:material:1.0.2")
 }
