@@ -33,13 +33,14 @@ ModifierConfiguration.init(
 )
 
 // Example usage size
-Spacer(modifier = Modifier.sizeLarge())
+Spacer(
+    modifier = Modifier.sizeLarge()
+)
 
 // Example usage padding
 Box(
     modifier = Modifier
         .paddingLarge()
-        .fillMaxSize()
 )
 ```
 
