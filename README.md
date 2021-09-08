@@ -34,7 +34,8 @@ ModifierConfiguration.init(
 
 // Example usage size
 Spacer(
-    modifier = Modifier.sizeLarge()
+    modifier = Modifier
+        .sizeLarge()
 )
 
 // Example usage padding
