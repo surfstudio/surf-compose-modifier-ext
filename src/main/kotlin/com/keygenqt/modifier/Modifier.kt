@@ -47,9 +47,9 @@ fun Modifier.paddingLarge(): Modifier = this.then(padding(ModifierConfiguration.
 
 fun Modifier.paddingXLarge(): Modifier = this.then(padding(ModifierConfiguration.XLarge))
 
-fun Modifier.padding2XLarge(): Modifier = this.then(padding(ModifierConfiguration.`2XLarge`))
+fun Modifier.paddingXLarge2(): Modifier = this.then(padding(ModifierConfiguration.XLarge2))
 
-fun Modifier.padding3XLarge(): Modifier = this.then(padding(ModifierConfiguration.`3XLarge`))
+fun Modifier.paddingXLarge3(): Modifier = this.then(padding(ModifierConfiguration.XLarge3))
 
 /**
  * Modifier size configuration size
@@ -67,6 +67,6 @@ fun Modifier.sizeLarge(): Modifier = this.then(size(ModifierConfiguration.large)
 
 fun Modifier.sizeXLarge(): Modifier = this.then(size(ModifierConfiguration.XLarge))
 
-fun Modifier.size2XLarge(): Modifier = this.then(size(ModifierConfiguration.`2XLarge`))
+fun Modifier.sizeXLarge2(): Modifier = this.then(size(ModifierConfiguration.XLarge2))
 
-fun Modifier.size3XLarge(): Modifier = this.then(size(ModifierConfiguration.`3XLarge`))
+fun Modifier.sizeXLarge3(): Modifier = this.then(size(ModifierConfiguration.XLarge3))

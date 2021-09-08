@@ -32,8 +32,8 @@ object ModifierConfiguration {
     internal var medium: Dp = 8.dp
     internal var large: Dp = 16.dp
     internal var XLarge: Dp = 24.dp
-    internal var `2XLarge`: Dp = 48.dp
-    internal var `3XLarge`: Dp = 96.dp
+    internal var XLarge2: Dp = 48.dp
+    internal var XLarge3: Dp = 96.dp
 
     fun init(
         XSmall: Dp = ModifierConfiguration.XSmall,
@@ -41,15 +41,15 @@ object ModifierConfiguration {
         medium: Dp = ModifierConfiguration.medium,
         large: Dp = ModifierConfiguration.large,
         XLarge: Dp = ModifierConfiguration.XLarge,
-        `2XLarge`: Dp = ModifierConfiguration.`2XLarge`,
-        `3XLarge`: Dp = ModifierConfiguration.`3XLarge`
+        XLarge2: Dp = ModifierConfiguration.XLarge2,
+        XLarge3: Dp = ModifierConfiguration.XLarge3
     ) {
         this.XSmall = XSmall
         this.small = small
         this.medium = medium
         this.large = large
         this.XLarge = XLarge
-        this.`2XLarge` = `2XLarge`
-        this.`3XLarge` = `3XLarge`
+        this.XLarge2 = XLarge2
+        this.XLarge3 = XLarge3
     }
 }

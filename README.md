@@ -14,11 +14,9 @@ dependencies {
 }
 ```
 
-### Extensions
+### Idea
 
-* visible - Controlling element visibility based on transparency
-* padding{XSmall} - Padding common sizes (XSmall, small, medium, large, XLarge, 2XLarge, 3XLarge)
-* size{XSmall} - Padding common sizes (XSmall, small, medium, large, XLarge, 2XLarge, 3XLarge)
+General settings for the modifier and custom features
 
 ### Usage
 
@@ -30,13 +28,26 @@ ModifierConfiguration.init(
     medium = 8.dp,
     large = 16.dp,
     XLarge = 24.dp,
-    `2XLarge` = 48.dp,
-    `3XLarge` = 96.dp,
+    XLarge2 = 48.dp,
+    XLarge3 = 96.dp,
 )
 
-// Example usage
+// Example usage size
 Spacer(modifier = Modifier.sizeLarge())
+
+// Example usage padding
+Box(
+    modifier = Modifier
+        .paddingLarge()
+        .fillMaxSize()
+)
 ```
+
+### Extensions
+
+* visible - Controlling element visibility based on transparency
+* padding{XSmall} - Padding common (XSmall, small, medium, large, XLarge, XLarge2, XLarge3)
+* size{XSmall} - Size common (XSmall, small, medium, large, XLarge, XLarge2, XLarge3)
 
 # License
 
