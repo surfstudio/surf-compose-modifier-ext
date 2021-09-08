@@ -46,9 +46,9 @@ Box(
 
 ### Extensions
 
-* visible - Controlling element visibility based on transparency
 * padding{XSmall} - Padding common (XSmall, small, medium, large, XLarge, XLarge2, XLarge3)
 * size{XSmall} - Size common (XSmall, small, medium, large, XLarge, XLarge2, XLarge3)
+* visible - Controlling element visibility based on transparency
 
 # License
 
