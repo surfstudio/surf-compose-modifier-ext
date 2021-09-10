@@ -1,57 +1,34 @@
-Jetpack Compose Modifier Extension
-===================
+## Compose Modifier Extension
 
-![picture](data/just-image.png)
+![picture](https://github.com/keygenqt/compose-modifier-ext/blob/master/data/just-image.png?raw=true)
 
-#### Connection:
+General settings for the modifier and custom features
+
+## Connection
+
+![Maven metadata URL](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fartifactory.keygenqt.com%2Fartifactory%2Fopen-source%2Fcom%2Fkeygenqt%2Fmodifier%2Fcompose-modifier-ext%2Fmaven-metadata.xml)
 
 ```gradle
 repositories {
     maven("https://artifactory.keygenqt.com/artifactory/open-source")
 }
 dependencies {
-    implementation("com.keygenqt.modifier:compose-modifier-ext:0.0.2")
+    implementation("com.keygenqt.modifier:compose-modifier-ext:{version}")
 }
 ```
 
-### Idea
+## Features:
 
-General settings for the modifier and custom features
+### ![picture](https://github.com/google/material-design-icons/blob/master/png/editor/padding/materialicons/18dp/1x/baseline_padding_black_18dp.png?raw=true) [Paddings](https://keygenqt.github.io/compose-modifier-ext/Paddings)
+Paddings standardization based on baseline configuration
 
-### Usage
+### ![picture](https://github.com/google/material-design-icons/blob/master/png/image/photo_size_select_large/materialicons/18dp/1x/baseline_photo_size_select_large_black_18dp.png?raw=true) [Size](https://keygenqt.github.io/compose-modifier-ext/Size)
+Dimension standardization based on baseline configuration
 
-```kotlin
-// Default configuration
-ModifierConfiguration.init(
-    XSmall = 2.dp,
-    small = 4.dp,
-    medium = 8.dp,
-    large = 16.dp,
-    XLarge = 24.dp,
-    XLarge2 = 48.dp,
-    XLarge3 = 96.dp,
-)
+### ![picture](https://github.com/google/material-design-icons/raw/master/png/action/extension/materialicons/18dp/1x/baseline_extension_black_18dp.png?raw=true) [Other extensions](https://keygenqt.github.io/compose-modifier-ext/OtherExtensions)
+Simplification of handling and addition of functions that do not exist yet
 
-// Example usage size
-Spacer(
-    modifier = Modifier
-        .sizeLarge()
-)
-
-// Example usage padding
-Box(
-    modifier = Modifier
-        .paddingLarge()
-)
-```
-
-### Extensions
-
-* padding{XSmall} - Padding common (XSmall, small, medium, large, XLarge, XLarge2, XLarge3)
-* size{XSmall} - Size common (XSmall, small, medium, large, XLarge, XLarge2, XLarge3)
-* visible - Controlling element visibility based on transparency
-
-# License
+## License
 
 ```
 Copyright 2021 Vitaliy Zarubin

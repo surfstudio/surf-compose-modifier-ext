@@ -34,10 +34,10 @@ fun Modifier.visible(visibility: Boolean): Modifier = this.then(alpha(if (visibi
 /**
  * Modifier padding configuration size
  *
- * @since 0.0.3
+ * @since 0.0.4
  * @author Vitaliy Zarubin
  */
-fun Modifier.paddingXSmall(): Modifier = this.then(padding(ModifierConfiguration.XSmall))
+fun Modifier.paddingXSmall(): Modifier = this.then(padding(ModifierConfiguration.xSmall))
 
 fun Modifier.paddingSmall(): Modifier = this.then(padding(ModifierConfiguration.small))
 
@@ -45,19 +45,19 @@ fun Modifier.paddingMedium(): Modifier = this.then(padding(ModifierConfiguration
 
 fun Modifier.paddingLarge(): Modifier = this.then(padding(ModifierConfiguration.large))
 
-fun Modifier.paddingXLarge(): Modifier = this.then(padding(ModifierConfiguration.XLarge))
+fun Modifier.paddingXLarge(): Modifier = this.then(padding(ModifierConfiguration.xLarge))
 
-fun Modifier.paddingXLarge2(): Modifier = this.then(padding(ModifierConfiguration.XLarge2))
+fun Modifier.paddingXLarge2(): Modifier = this.then(padding(ModifierConfiguration.xLarge2))
 
-fun Modifier.paddingXLarge3(): Modifier = this.then(padding(ModifierConfiguration.XLarge3))
+fun Modifier.paddingXLarge3(): Modifier = this.then(padding(ModifierConfiguration.xLarge3))
 
 /**
  * Modifier size configuration size
  *
- * @since 0.0.3
+ * @since 0.0.4
  * @author Vitaliy Zarubin
  */
-fun Modifier.sizeXSmall(): Modifier = this.then(size(ModifierConfiguration.XSmall))
+fun Modifier.sizeXSmall(): Modifier = this.then(size(ModifierConfiguration.xSmall))
 
 fun Modifier.sizeSmall(): Modifier = this.then(size(ModifierConfiguration.small))
 
@@ -65,8 +65,8 @@ fun Modifier.sizeMedium(): Modifier = this.then(size(ModifierConfiguration.mediu
 
 fun Modifier.sizeLarge(): Modifier = this.then(size(ModifierConfiguration.large))
 
-fun Modifier.sizeXLarge(): Modifier = this.then(size(ModifierConfiguration.XLarge))
+fun Modifier.sizeXLarge(): Modifier = this.then(size(ModifierConfiguration.xLarge))
 
-fun Modifier.sizeXLarge2(): Modifier = this.then(size(ModifierConfiguration.XLarge2))
+fun Modifier.sizeXLarge2(): Modifier = this.then(size(ModifierConfiguration.xLarge2))
 
-fun Modifier.sizeXLarge3(): Modifier = this.then(size(ModifierConfiguration.XLarge3))
+fun Modifier.sizeXLarge3(): Modifier = this.then(size(ModifierConfiguration.xLarge3))

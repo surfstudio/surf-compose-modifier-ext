@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+## Compose Modifier Extension
 
-You can use the [editor on GitHub](https://github.com/keygenqt/compose-modifier-ext/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+![picture](https://github.com/keygenqt/compose-modifier-ext/blob/master/data/just-image.png?raw=true)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+General settings for the modifier and custom features
 
-### Markdown
+## Connection
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![Maven metadata URL](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fartifactory.keygenqt.com%2Fartifactory%2Fopen-source%2Fcom%2Fkeygenqt%2Fmodifier%2Fcompose-modifier-ext%2Fmaven-metadata.xml)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```gradle
+repositories {
+    maven("https://artifactory.keygenqt.com/artifactory/open-source")
+}
+dependencies {
+    implementation("com.keygenqt.modifier:compose-modifier-ext:{version}")
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Features:
 
-### Jekyll Themes
+### ![picture](https://github.com/google/material-design-icons/blob/master/png/editor/padding/materialicons/18dp/1x/baseline_padding_black_18dp.png?raw=true) [Paddings](https://keygenqt.github.io/compose-modifier-ext/Paddings)
+Paddings standardization based on baseline configuration
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/keygenqt/compose-modifier-ext/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### ![picture](https://github.com/google/material-design-icons/blob/master/png/image/photo_size_select_large/materialicons/18dp/1x/baseline_photo_size_select_large_black_18dp.png?raw=true) [Size](https://keygenqt.github.io/compose-modifier-ext/Size)
+Dimension standardization based on baseline configuration
 
-### Support or Contact
+### ![picture](https://github.com/google/material-design-icons/raw/master/png/action/extension/materialicons/18dp/1x/baseline_extension_black_18dp.png?raw=true) [Other extensions](https://keygenqt.github.io/compose-modifier-ext/OtherExtensions)
+Simplification of handling and addition of functions that do not exist yet
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## License
+
+```
+Copyright 2021 Vitaliy Zarubin
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```

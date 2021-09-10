@@ -27,29 +27,29 @@ import androidx.compose.ui.unit.dp
  */
 object ModifierConfiguration {
 
-    internal var XSmall: Dp = 2.dp
+    internal var xSmall: Dp = 2.dp
     internal var small: Dp = 4.dp
     internal var medium: Dp = 8.dp
     internal var large: Dp = 16.dp
-    internal var XLarge: Dp = 24.dp
-    internal var XLarge2: Dp = 48.dp
-    internal var XLarge3: Dp = 96.dp
+    internal var xLarge: Dp = 24.dp
+    internal var xLarge2: Dp = 48.dp
+    internal var xLarge3: Dp = 96.dp
 
     fun init(
-        XSmall: Dp = ModifierConfiguration.XSmall,
+        xSmall: Dp = ModifierConfiguration.xSmall,
         small: Dp = ModifierConfiguration.small,
         medium: Dp = ModifierConfiguration.medium,
         large: Dp = ModifierConfiguration.large,
-        XLarge: Dp = ModifierConfiguration.XLarge,
-        XLarge2: Dp = ModifierConfiguration.XLarge2,
-        XLarge3: Dp = ModifierConfiguration.XLarge3
+        xLarge: Dp = ModifierConfiguration.xLarge,
+        xLarge2: Dp = ModifierConfiguration.xLarge2,
+        xLarge3: Dp = ModifierConfiguration.xLarge3
     ) {
-        this.XSmall = XSmall
+        this.xSmall = xSmall
         this.small = small
         this.medium = medium
         this.large = large
-        this.XLarge = XLarge
-        this.XLarge2 = XLarge2
-        this.XLarge3 = XLarge3
+        this.xLarge = xLarge
+        this.xLarge2 = xLarge2
+        this.xLarge3 = xLarge3
     }
 }
