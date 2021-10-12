@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 package com.keygenqt.modifier
 
 import androidx.compose.foundation.layout.padding
@@ -50,6 +50,116 @@ fun Modifier.paddingXLarge(): Modifier = this.then(padding(ModifierConfiguration
 fun Modifier.paddingXLarge2(): Modifier = this.then(padding(ModifierConfiguration.xLarge2))
 
 fun Modifier.paddingXLarge3(): Modifier = this.then(padding(ModifierConfiguration.xLarge3))
+
+/**
+ * Modifier padding start - end
+ *
+ * @since 0.0.6
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.paddingXSmallStartEnd(): Modifier = this.then(
+    padding(
+        start = ModifierConfiguration.xSmall,
+        end = ModifierConfiguration.xSmall
+    )
+)
+
+fun Modifier.paddingSmallStartEnd(): Modifier = this.then(
+    padding(
+        start = ModifierConfiguration.small,
+        end = ModifierConfiguration.small
+    )
+)
+
+fun Modifier.paddingMediumStartEnd(): Modifier = this.then(
+    padding(
+        start = ModifierConfiguration.medium,
+        end = ModifierConfiguration.medium
+    )
+)
+
+fun Modifier.paddingLargeStartEnd(): Modifier = this.then(
+    padding(
+        start = ModifierConfiguration.large,
+        end = ModifierConfiguration.large
+    )
+)
+
+fun Modifier.paddingXLargeStartEnd(): Modifier = this.then(
+    padding(
+        start = ModifierConfiguration.xLarge,
+        end = ModifierConfiguration.xLarge
+    )
+)
+
+fun Modifier.paddingXLarge2StartEnd(): Modifier = this.then(
+    padding(
+        start = ModifierConfiguration.xLarge2,
+        end = ModifierConfiguration.xLarge2
+    )
+)
+
+fun Modifier.paddingXLarge3StartEnd(): Modifier = this.then(
+    padding(
+        start = ModifierConfiguration.xLarge3,
+        end = ModifierConfiguration.xLarge3
+    )
+)
+
+/**
+ * Modifier padding top - bottom
+ *
+ * @since 0.0.6
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.paddingXSmallTopBottom(): Modifier = this.then(
+    padding(
+        top = ModifierConfiguration.xSmall,
+        bottom = ModifierConfiguration.xSmall
+    )
+)
+
+fun Modifier.paddingSmallTopBottom(): Modifier = this.then(
+    padding(
+        top = ModifierConfiguration.small,
+        bottom = ModifierConfiguration.small
+    )
+)
+
+fun Modifier.paddingMediumTopBottom(): Modifier = this.then(
+    padding(
+        top = ModifierConfiguration.medium,
+        bottom = ModifierConfiguration.medium
+    )
+)
+
+fun Modifier.paddingLargeTopBottom(): Modifier = this.then(
+    padding(
+        top = ModifierConfiguration.large,
+        bottom = ModifierConfiguration.large
+    )
+)
+
+fun Modifier.paddingXLargeTopBottom(): Modifier = this.then(
+    padding(
+        top = ModifierConfiguration.xLarge,
+        bottom = ModifierConfiguration.xLarge
+    )
+)
+
+fun Modifier.paddingXLarge2TopBottom(): Modifier = this.then(
+    padding(
+        top = ModifierConfiguration.xLarge2,
+        bottom = ModifierConfiguration.xLarge2
+    )
+)
+
+fun Modifier.paddingXLarge3TopBottom(): Modifier = this.then(
+    padding(
+        top = ModifierConfiguration.xLarge3,
+        bottom = ModifierConfiguration.xLarge3
+    )
+)
 
 /**
  * Modifier size configuration size
