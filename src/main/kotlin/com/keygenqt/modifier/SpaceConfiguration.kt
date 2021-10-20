@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.dp
 /**
  * Modifier configuration
  *
- * @since 0.0.7
+ * @since 0.0.8
  * @author Vitaliy Zarubin
  */
 object SpaceConfiguration {
@@ -34,13 +34,6 @@ object SpaceConfiguration {
     internal var spaceItemHorizontal: Dp = 8.dp
     internal var spaceList: Dp = 8.dp
     internal var spaceForm: Dp = 16.dp
-
-    // not change, fix sizes
-    internal var spaceThin: Dp = 2.dp
-    internal var spaceSmall: Dp = 4.dp
-    internal var spaceBase: Dp = 8.dp
-    internal var spaceMedium: Dp = 16.dp
-    internal var spaceLarge: Dp = 24.dp
 
     fun init(
         spacePageVertical: Dp = SpaceConfiguration.spacePageVertical,

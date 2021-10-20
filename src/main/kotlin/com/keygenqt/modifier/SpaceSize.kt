@@ -17,23 +17,28 @@
 package com.keygenqt.modifier
 
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
 
 /**
  * Modifier configuration
  *
- * @since 0.0.7
+ * @since 0.0.8
  * @author Vitaliy Zarubin
  */
 object SpaceSize {
+
+    // configuration sizes
     val spacePageVertical: Dp = SpaceConfiguration.spacePageVertical
     val spacePageHorizontal: Dp = SpaceConfiguration.spacePageHorizontal
     val spaceItemVertical: Dp = SpaceConfiguration.spaceItemVertical
     val spaceItemHorizontal: Dp = SpaceConfiguration.spaceItemHorizontal
     val spaceList: Dp = SpaceConfiguration.spaceList
     val spaceForm: Dp = SpaceConfiguration.spaceForm
-    val spaceThin: Dp = SpaceConfiguration.spaceThin
-    val spaceSmall: Dp = SpaceConfiguration.spaceSmall
-    val spaceBase: Dp = SpaceConfiguration.spaceBase
-    val spaceMedium: Dp = SpaceConfiguration.spaceMedium
-    val spaceLarge: Dp = SpaceConfiguration.spaceLarge
+
+    // not change, fix sizes
+    val spaceThin: Dp = 2.dp
+    val spaceSmall: Dp = 4.dp
+    val spaceBase: Dp = 8.dp
+    val spaceMedium: Dp = 16.dp
+    val spaceLarge: Dp = 24.dp
 }
