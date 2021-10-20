@@ -36,8 +36,6 @@ SpaceConfiguration.init(
 )
 ```
 
-#### Constant sizes
-
 #### Usage example
 ```kotlin
 Column(
