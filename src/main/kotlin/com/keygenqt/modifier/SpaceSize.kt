@@ -21,15 +21,19 @@ import androidx.compose.ui.unit.Dp
 /**
  * Modifier configuration
  *
- * @since 0.0.6
+ * @since 0.0.7
  * @author Vitaliy Zarubin
  */
-object ModifierSize {
-    val xSmall: Dp = ModifierConfiguration.xSmall
-    val small: Dp = ModifierConfiguration.xSmall
-    val medium: Dp = ModifierConfiguration.xSmall
-    val large: Dp = ModifierConfiguration.xSmall
-    val xLarge: Dp = ModifierConfiguration.xSmall
-    val xLarge2: Dp = ModifierConfiguration.xSmall
-    val xLarge3: Dp = ModifierConfiguration.xSmall
+object SpaceSize {
+    val spacePageVertical: Dp = SpaceConfiguration.spacePageVertical
+    val spacePageHorizontal: Dp = SpaceConfiguration.spacePageHorizontal
+    val spaceItemVertical: Dp = SpaceConfiguration.spaceItemVertical
+    val spaceItemHorizontal: Dp = SpaceConfiguration.spaceItemHorizontal
+    val spaceList: Dp = SpaceConfiguration.spaceList
+    val spaceForm: Dp = SpaceConfiguration.spaceForm
+    val spaceThin: Dp = SpaceConfiguration.spaceThin
+    val spaceSmall: Dp = SpaceConfiguration.spaceSmall
+    val spaceBase: Dp = SpaceConfiguration.spaceBase
+    val spaceMedium: Dp = SpaceConfiguration.spaceMedium
+    val spaceLarge: Dp = SpaceConfiguration.spaceLarge
 }

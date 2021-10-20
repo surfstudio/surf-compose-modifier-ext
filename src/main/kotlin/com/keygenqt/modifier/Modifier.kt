@@ -17,7 +17,6 @@
 package com.keygenqt.modifier
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 
@@ -34,149 +33,139 @@ fun Modifier.visible(visibility: Boolean): Modifier = this.then(alpha(if (visibi
 /**
  * Modifier padding configuration size
  *
- * @since 0.0.4
+ * @since 0.0.7
  * @author Vitaliy Zarubin
  */
-fun Modifier.paddingXSmall(): Modifier = this.then(padding(ModifierConfiguration.xSmall))
-
-fun Modifier.paddingSmall(): Modifier = this.then(padding(ModifierConfiguration.small))
-
-fun Modifier.paddingMedium(): Modifier = this.then(padding(ModifierConfiguration.medium))
-
-fun Modifier.paddingLarge(): Modifier = this.then(padding(ModifierConfiguration.large))
-
-fun Modifier.paddingXLarge(): Modifier = this.then(padding(ModifierConfiguration.xLarge))
-
-fun Modifier.paddingXLarge2(): Modifier = this.then(padding(ModifierConfiguration.xLarge2))
-
-fun Modifier.paddingXLarge3(): Modifier = this.then(padding(ModifierConfiguration.xLarge3))
-
-/**
- * Modifier padding start - end
- *
- * @since 0.0.6
- * @author Vitaliy Zarubin
- */
-fun Modifier.paddingXSmallStartEnd(): Modifier = this.then(
-    padding(
-        start = ModifierConfiguration.xSmall,
-        end = ModifierConfiguration.xSmall
-    )
-)
-
-fun Modifier.paddingSmallStartEnd(): Modifier = this.then(
-    padding(
-        start = ModifierConfiguration.small,
-        end = ModifierConfiguration.small
-    )
-)
-
-fun Modifier.paddingMediumStartEnd(): Modifier = this.then(
-    padding(
-        start = ModifierConfiguration.medium,
-        end = ModifierConfiguration.medium
-    )
-)
-
-fun Modifier.paddingLargeStartEnd(): Modifier = this.then(
-    padding(
-        start = ModifierConfiguration.large,
-        end = ModifierConfiguration.large
-    )
-)
-
-fun Modifier.paddingXLargeStartEnd(): Modifier = this.then(
-    padding(
-        start = ModifierConfiguration.xLarge,
-        end = ModifierConfiguration.xLarge
-    )
-)
-
-fun Modifier.paddingXLarge2StartEnd(): Modifier = this.then(
-    padding(
-        start = ModifierConfiguration.xLarge2,
-        end = ModifierConfiguration.xLarge2
-    )
-)
-
-fun Modifier.paddingXLarge3StartEnd(): Modifier = this.then(
-    padding(
-        start = ModifierConfiguration.xLarge3,
-        end = ModifierConfiguration.xLarge3
-    )
+fun Modifier.spacePage() = padding(
+    top = SpaceSize.spacePageVertical,
+    bottom = SpaceSize.spacePageVertical,
+    start = SpaceSize.spacePageHorizontal,
+    end = SpaceSize.spacePageHorizontal,
 )
 
 /**
- * Modifier padding top - bottom
+ * Modifier padding configuration size
  *
- * @since 0.0.6
+ * @since 0.0.7
  * @author Vitaliy Zarubin
  */
-fun Modifier.paddingXSmallTopBottom(): Modifier = this.then(
-    padding(
-        top = ModifierConfiguration.xSmall,
-        bottom = ModifierConfiguration.xSmall
-    )
-)
-
-fun Modifier.paddingSmallTopBottom(): Modifier = this.then(
-    padding(
-        top = ModifierConfiguration.small,
-        bottom = ModifierConfiguration.small
-    )
-)
-
-fun Modifier.paddingMediumTopBottom(): Modifier = this.then(
-    padding(
-        top = ModifierConfiguration.medium,
-        bottom = ModifierConfiguration.medium
-    )
-)
-
-fun Modifier.paddingLargeTopBottom(): Modifier = this.then(
-    padding(
-        top = ModifierConfiguration.large,
-        bottom = ModifierConfiguration.large
-    )
-)
-
-fun Modifier.paddingXLargeTopBottom(): Modifier = this.then(
-    padding(
-        top = ModifierConfiguration.xLarge,
-        bottom = ModifierConfiguration.xLarge
-    )
-)
-
-fun Modifier.paddingXLarge2TopBottom(): Modifier = this.then(
-    padding(
-        top = ModifierConfiguration.xLarge2,
-        bottom = ModifierConfiguration.xLarge2
-    )
-)
-
-fun Modifier.paddingXLarge3TopBottom(): Modifier = this.then(
-    padding(
-        top = ModifierConfiguration.xLarge3,
-        bottom = ModifierConfiguration.xLarge3
-    )
+fun Modifier.spacePageVertical() = padding(
+    top = SpaceSize.spacePageVertical,
+    bottom = SpaceSize.spacePageVertical,
 )
 
 /**
- * Modifier size configuration size
+ * Modifier padding configuration size
  *
- * @since 0.0.4
+ * @since 0.0.7
  * @author Vitaliy Zarubin
  */
-fun Modifier.sizeXSmall(): Modifier = this.then(size(ModifierConfiguration.xSmall))
+fun Modifier.spacePageHorizontal() = padding(
+    start = SpaceSize.spacePageHorizontal,
+    end = SpaceSize.spacePageHorizontal,
+)
 
-fun Modifier.sizeSmall(): Modifier = this.then(size(ModifierConfiguration.small))
+/**
+ * Modifier padding configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceItem() = padding(
+    top = SpaceSize.spaceItemVertical,
+    bottom = SpaceSize.spaceItemVertical,
+    start = SpaceSize.spaceItemHorizontal,
+    end = SpaceSize.spaceItemHorizontal,
+)
 
-fun Modifier.sizeMedium(): Modifier = this.then(size(ModifierConfiguration.medium))
+/**
+ * Modifier padding configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceItemVertical() = padding(
+    top = SpaceSize.spaceItemVertical,
+    bottom = SpaceSize.spaceItemVertical,
+)
 
-fun Modifier.sizeLarge(): Modifier = this.then(size(ModifierConfiguration.large))
+/**
+ * Modifier padding configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceItemHorizontal() = padding(
+    start = SpaceSize.spaceItemHorizontal,
+    end = SpaceSize.spaceItemHorizontal,
+)
 
-fun Modifier.sizeXLarge(): Modifier = this.then(size(ModifierConfiguration.xLarge))
+/**
+ * Modifier padding configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceList() = padding(
+    all = SpaceSize.spaceList
+)
 
-fun Modifier.sizeXLarge2(): Modifier = this.then(size(ModifierConfiguration.xLarge2))
+/**
+ * Modifier padding configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceForm() = padding(
+    all = SpaceSize.spaceForm
+)
 
-fun Modifier.sizeXLarge3(): Modifier = this.then(size(ModifierConfiguration.xLarge3))
+/**
+ * Modifier padding fix size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceThin() = padding(
+    all = SpaceSize.spaceThin
+)
+
+/**
+ * Modifier padding fix size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceSmall() = padding(
+    all = SpaceSize.spaceSmall
+)
+
+/**
+ * Modifier padding fix size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceBase() = padding(
+    all = SpaceSize.spaceBase
+)
+
+/**
+ * Modifier padding fix size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceMedium() = padding(
+    all = SpaceSize.spaceMedium
+)
+
+/**
+ * Modifier padding fix size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceLarge() = padding(
+    all = SpaceSize.spaceLarge
+)
