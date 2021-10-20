@@ -17,6 +17,7 @@
 package com.keygenqt.modifier
 
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 
@@ -41,6 +42,17 @@ fun Modifier.spacePage() = padding(
     bottom = SpaceSize.spacePageVertical,
     start = SpaceSize.spacePageHorizontal,
     end = SpaceSize.spacePageHorizontal,
+)
+
+/**
+ * Modifier size configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spacePageSize() = size(
+    height = SpaceSize.spacePageVertical,
+    width = SpaceSize.spacePageHorizontal,
 )
 
 /**
@@ -79,6 +91,17 @@ fun Modifier.spaceItem() = padding(
 )
 
 /**
+ * Modifier size configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceItemSize() = size(
+    height = SpaceSize.spaceItemVertical,
+    width = SpaceSize.spaceItemHorizontal,
+)
+
+/**
  * Modifier padding configuration size
  *
  * @since 0.0.7
@@ -111,6 +134,17 @@ fun Modifier.spaceList() = padding(
 )
 
 /**
+ * Modifier size configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceListSize() = size(
+    height = SpaceSize.spaceList,
+    width = SpaceSize.spaceList,
+)
+
+/**
  * Modifier padding configuration size
  *
  * @since 0.0.7
@@ -118,6 +152,17 @@ fun Modifier.spaceList() = padding(
  */
 fun Modifier.spaceForm() = padding(
     all = SpaceSize.spaceForm
+)
+
+/**
+ * Modifier size configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceFormSize() = size(
+    height = SpaceSize.spaceForm,
+    width = SpaceSize.spaceForm,
 )
 
 /**
@@ -131,6 +176,17 @@ fun Modifier.spaceThin() = padding(
 )
 
 /**
+ * Modifier size configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceThinSize() = size(
+    height = SpaceSize.spaceThin,
+    width = SpaceSize.spaceThin,
+)
+
+/**
  * Modifier padding fix size
  *
  * @since 0.0.7
@@ -138,6 +194,17 @@ fun Modifier.spaceThin() = padding(
  */
 fun Modifier.spaceSmall() = padding(
     all = SpaceSize.spaceSmall
+)
+
+/**
+ * Modifier size configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceSmallSize() = size(
+    height = SpaceSize.spaceSmall,
+    width = SpaceSize.spaceSmall,
 )
 
 /**
@@ -151,6 +218,17 @@ fun Modifier.spaceBase() = padding(
 )
 
 /**
+ * Modifier size configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceBaseSize() = size(
+    height = SpaceSize.spaceBase,
+    width = SpaceSize.spaceBase,
+)
+
+/**
  * Modifier padding fix size
  *
  * @since 0.0.7
@@ -161,6 +239,17 @@ fun Modifier.spaceMedium() = padding(
 )
 
 /**
+ * Modifier size configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceMediumSize() = size(
+    height = SpaceSize.spaceMedium,
+    width = SpaceSize.spaceMedium,
+)
+
+/**
  * Modifier padding fix size
  *
  * @since 0.0.7
@@ -168,4 +257,15 @@ fun Modifier.spaceMedium() = padding(
  */
 fun Modifier.spaceLarge() = padding(
     all = SpaceSize.spaceLarge
+)
+
+/**
+ * Modifier size configuration size
+ *
+ * @since 0.0.7
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.spaceLargeSize() = size(
+    height = SpaceSize.spaceMedium,
+    width = SpaceSize.spaceMedium,
 )
