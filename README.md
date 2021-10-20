@@ -19,11 +19,8 @@ dependencies {
 
 ## Features:
 
-### ![picture](https://github.com/google/material-design-icons/blob/master/png/editor/padding/materialicons/18dp/1x/baseline_padding_black_18dp.png?raw=true) [Paddings](https://keygenqt.github.io/compose-modifier-ext/Paddings)
-Paddings standardization based on baseline configuration
-
-### ![picture](https://github.com/google/material-design-icons/blob/master/png/image/photo_size_select_large/materialicons/18dp/1x/baseline_photo_size_select_large_black_18dp.png?raw=true) [Size](https://keygenqt.github.io/compose-modifier-ext/Size)
-Dimension standardization based on baseline configuration
+### ![picture](https://github.com/google/material-design-icons/blob/master/png/editor/padding/materialicons/18dp/1x/baseline_padding_black_18dp.png?raw=true) [Spaces](https://keygenqt.github.io/compose-modifier-ext/Paddings)
+Paddings configuration for application and a set of constant sizes to minimize use "magic number"
 
 ### ![picture](https://github.com/google/material-design-icons/raw/master/png/action/extension/materialicons/18dp/1x/baseline_extension_black_18dp.png?raw=true) [Other extensions](https://keygenqt.github.io/compose-modifier-ext/OtherExtensions)
 Simplification of handling and addition of functions that do not exist yet
