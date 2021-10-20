@@ -1,4 +1,4 @@
-### Paddings
+### Spaces
 
 Paddings configuration for application and a set of constant sizes to minimize use "magic number"
 
