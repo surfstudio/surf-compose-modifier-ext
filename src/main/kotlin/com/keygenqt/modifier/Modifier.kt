@@ -266,6 +266,6 @@ fun Modifier.spaceLarge() = padding(
  * @author Vitaliy Zarubin
  */
 fun Modifier.spaceLargeSize() = size(
-    height = SpaceSize.spaceMedium,
-    width = SpaceSize.spaceMedium,
+    height = SpaceSize.spaceLarge,
+    width = SpaceSize.spaceLarge,
 )
