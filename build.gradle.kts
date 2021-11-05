@@ -9,6 +9,8 @@ plugins {
 version = "0.0.10"
 group = "com.keygenqt.modifier"
 
+val compose = "1.0.5"
+
 spotless {
     kotlin {
         target("**/*.kt")
@@ -53,6 +55,6 @@ android {
 }
 
 dependencies {
-    implementation("androidx.compose.ui:ui:1.0.2")
-    implementation("androidx.compose.material:material:1.0.2")
+    implementation("androidx.compose.ui:ui:$compose")
+    implementation("androidx.compose.material:material:$compose")
 }
