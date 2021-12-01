@@ -14,7 +14,7 @@
  * limitations under the License.
  */
  
-package ru.surfstudio.compose.modifier.ext
+package ru.surfstudio.compose.modifier
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size

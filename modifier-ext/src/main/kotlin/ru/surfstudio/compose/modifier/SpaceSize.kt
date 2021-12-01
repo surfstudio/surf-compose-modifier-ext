@@ -14,7 +14,7 @@
  * limitations under the License.
  */
  
-package ru.surfstudio.compose.modifier.ext
+package ru.surfstudio.compose.modifier
 
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
