@@ -46,6 +46,12 @@ android {
         targetSdk = 31
         setProperty("archivesBaseName", "modifier-ext-$version")
     }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+        }
+    }
 }
 
 dependencies {

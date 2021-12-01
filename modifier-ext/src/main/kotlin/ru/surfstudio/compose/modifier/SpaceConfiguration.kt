@@ -14,7 +14,7 @@
  * limitations under the License.
  */
  
-package ru.surfstudio.compose.modifier.ext
+package ru.surfstudio.compose.modifier
 
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -43,11 +43,11 @@ object SpaceConfiguration {
         spaceList: Dp = SpaceConfiguration.spaceList,
         spaceForm: Dp = SpaceConfiguration.spaceForm,
     ) {
-        this.spacePageVertical = spacePageVertical
-        this.spacePageHorizontal = spacePageHorizontal
-        this.spaceItemVertical = spaceItemVertical
-        this.spaceItemHorizontal = spaceItemHorizontal
-        this.spaceList = spaceList
-        this.spaceForm = spaceForm
+        SpaceConfiguration.spacePageVertical = spacePageVertical
+        SpaceConfiguration.spacePageHorizontal = spacePageHorizontal
+        SpaceConfiguration.spaceItemVertical = spaceItemVertical
+        SpaceConfiguration.spaceItemHorizontal = spaceItemHorizontal
+        SpaceConfiguration.spaceList = spaceList
+        SpaceConfiguration.spaceForm = spaceForm
     }
 }
