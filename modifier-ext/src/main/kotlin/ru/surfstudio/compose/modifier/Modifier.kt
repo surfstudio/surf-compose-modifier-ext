@@ -13,12 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
 package ru.surfstudio.compose.modifier
 
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.composed
 import androidx.compose.ui.draw.alpha
 
 /**
@@ -269,3 +272,36 @@ fun Modifier.spaceLargeSize() = size(
     height = SpaceSize.spaceLarge,
     width = SpaceSize.spaceLarge,
 )
+
+/**
+ * No Ripple Clickable
+ *
+ * @since 0.0.12
+ * @author Vitaliy Zarubin
+ */
+inline fun Modifier.noRippleClickable(crossinline onClick: () -> Unit): Modifier = composed {
+    clickable(
+        indication = null,
+        interactionSource = remember { MutableInteractionSource() }
+    ) {
+        onClick()
+    }
+}
+
+/**
+ * Modifier check bool is FALSE for set params
+ *
+ * @since 0.0.12
+ * @author Vitaliy Zarubin
+ */
+inline fun Modifier.ifFalse(value: Boolean, block: Modifier.() -> Modifier): Modifier =
+    if (!value) block.invoke(this) else this
+
+/**
+ * Modifier check bool is TRUE for set params
+ *
+ * @since 0.0.12
+ * @author Vitaliy Zarubin
+ */
+inline fun Modifier.ifTrue(value: Boolean, block: Modifier.() -> Modifier): Modifier =
+    if (value) block.invoke(this) else this
