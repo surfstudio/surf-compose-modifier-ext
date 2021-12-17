@@ -48,6 +48,14 @@ android {
         setProperty("archivesBaseName", "modifier-ext-$libVersion")
     }
 
+    composeOptions {
+        kotlinCompilerExtensionVersion = composeVersion
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
