@@ -13,16 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@file:Suppress("unused")
+
 package ru.surfstudio.compose.modifier
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyListState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
+import androidx.compose.ui.input.nestedscroll.NestedScrollSource
+import androidx.compose.ui.input.nestedscroll.nestedScroll
 
 /**
  * Controlling element visibility based on transparency
@@ -305,3 +316,46 @@ inline fun Modifier.ifFalse(value: Boolean, block: Modifier.() -> Modifier): Mod
  */
 inline fun Modifier.ifTrue(value: Boolean, block: Modifier.() -> Modifier): Modifier =
     if (value) block.invoke(this) else this
+
+/**
+ * Collapse list item animation
+ *
+ * @since 0.0.13
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.graphicsCollapse(
+    state: LazyListState,
+    translationValue: Float = 0.5f
+) = composed {
+    var scrolledY by remember { mutableStateOf(0f) }
+    var previousOffset by remember { mutableStateOf(0) }
+    graphicsLayer {
+        scrolledY += state.firstVisibleItemScrollOffset - previousOffset
+        translationY = scrolledY * translationValue
+        previousOffset = state.firstVisibleItemScrollOffset
+    }
+}
+
+/**
+ * Disable vertical pointer
+ *
+ * @since 0.0.13
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.disableVerticalPointerInputScroll() =
+    this.nestedScroll(object : NestedScrollConnection {
+        override fun onPreScroll(available: Offset, source: NestedScrollSource) =
+            available.copy(x = 0f)
+    })
+
+/**
+ * Disable horizontal pointer
+ *
+ * @since 0.0.13
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.disableHorizontalPointerInputScroll() =
+    this.nestedScroll(object : NestedScrollConnection {
+        override fun onPreScroll(available: Offset, source: NestedScrollSource) =
+            available.copy(y = 0f)
+    })
