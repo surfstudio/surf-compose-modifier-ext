@@ -300,6 +300,19 @@ inline fun Modifier.noRippleClickable(crossinline onClick: () -> Unit): Modifier
 }
 
 /**
+ * Interception of a click
+ *
+ * @since 0.0.14
+ * @author Vitaliy Zarubin
+ */
+fun Modifier.interceptionClickable(): Modifier = composed {
+    clickable(
+        indication = null,
+        interactionSource = remember { MutableInteractionSource() }
+    ) {}
+}
+
+/**
  * Modifier check bool is FALSE for set params
  *
  * @since 0.0.12
@@ -342,7 +355,7 @@ fun Modifier.graphicsCollapse(
  * @since 0.0.13
  * @author Vitaliy Zarubin
  */
-fun Modifier.disableVerticalPointerInputScroll() =
+fun Modifier.disableVerticalScroll() =
     this.nestedScroll(object : NestedScrollConnection {
         override fun onPreScroll(available: Offset, source: NestedScrollSource) =
             available.copy(x = 0f)
@@ -354,7 +367,7 @@ fun Modifier.disableVerticalPointerInputScroll() =
  * @since 0.0.13
  * @author Vitaliy Zarubin
  */
-fun Modifier.disableHorizontalPointerInputScroll() =
+fun Modifier.disableHorizontalScroll() =
     this.nestedScroll(object : NestedScrollConnection {
         override fun onPreScroll(available: Offset, source: NestedScrollSource) =
             available.copy(y = 0f)
